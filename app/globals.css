@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-source-sans), "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --color-siga-header: #1c4a6d;
+  --color-siga-logo: #1a5672;
+  --color-siga-sidebar: #222d32;
+  --color-siga-sidebar-dark: #1a2226;
+  --color-siga-active: #1e282c;
+  --color-siga-link: #b8c7ce;
+  --color-siga-accent: #3c8dbc;
+  --color-siga-bg: #ecf0f5;
+  --color-siga-aqua: #45bfdf;
+  --color-siga-text: #333333;
+  --color-siga-muted: #555555;
+  --color-siga-help: #4f7699;
+  --color-field-border: #d2d6de;
+  --color-field-readonly: #eeeeee;
+  --color-field-error: #dd4b39;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: var(--color-siga-bg);
+  color: var(--color-siga-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.42857;
+}
