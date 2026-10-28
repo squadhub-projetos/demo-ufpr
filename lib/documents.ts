@@ -1,12 +1,21 @@
 // Documentos exibidos no menu "Documentos"; cada anexo é vinculado a um deles.
-// `defaultFile` é o nome (sem extensão) do arquivo padrão em public/documentos-padrao/.
+// `defaultFiles` lista os nomes aceitos (sem extensão) do arquivo padrão em public/documentos-padrao/,
+// em ordem de preferência. Acentos e espaços são permitidos.
 export const documentTypes = [
-  { id: "declaracao-matricula", label: "Declaração de Matrícula", defaultFile: "declaracao-matricula" },
-  { id: "historico-integralizacao", label: "Histórico de Integralização", defaultFile: "historico-integralizacao" },
+  {
+    id: "declaracao-matricula",
+    label: "Declaração de Matrícula",
+    defaultFiles: ["Declaração de Matrícula", "declaracao-matricula"],
+  },
+  {
+    id: "historico-integralizacao",
+    label: "Histórico de Integralização",
+    defaultFiles: ["Histórico de Integralização", "historico-integralizacao"],
+  },
   {
     id: "registro-academico-ativo",
     label: "Declaração de registro acadêmico ativo",
-    defaultFile: "registro-academico-ativo",
+    defaultFiles: ["Declaração de registro acadêmico ativo", "registro-academico-ativo"],
   },
 ] as const;
 
